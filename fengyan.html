@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>石奉艳 | 个人主页</title>
+  <meta name="description" content="石奉艳 —— 新能源材料 / 薄膜分离 / 战略研究" />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#121933; --text:#e8ecff; --muted:#a9b3d6; --accent:#8aa3ff; --ring:#2a3b8f;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,#0b1020,#0e1430);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.9}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,16,32,.7);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #1c2550;z-index:9}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(closest-side,var(--accent),#5b72d8 70%,transparent)}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap}
+    .nav-links a{padding:8px 10px;border-radius:10px}
+    .nav-links a:hover{background:#121a3a}
+
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:50px 0}
+    .card{background:linear-gradient(180deg,#131b3d,#0e1633);border:1px solid #24306a;border-radius:24px;box-shadow:var(--shadow)}
+    .card.pad{padding:28px}
+    h1{font-size:40px;line-height:1.15;margin:0 0 12px}
+    .subtitle{color:var(--muted);margin:0 0 18px}
+    .pill{display:inline-flex;gap:10px;flex-wrap:wrap}
+    .pill span{padding:6px 10px;border-radius:999px;background:#121a3a;border:1px solid #22307a;color:#c6cff9;font-size:13px}
+    .cta{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid #2a3b8f;background:#162050;color:#e8ecff}
+    .btn.primary{background:linear-gradient(180deg,#6f86ff,#5970f6);border-color:#6f86ff;color:#0a0f22;font-weight:700}
+
+    .avatar{aspect-ratio:1/1;border-radius:22px;background:radial-gradient(120% 120% at 30% 20%,#2a3b8f,#121933 60%,#0a0f22);border:1px solid #24306a}
+
+    section{scroll-margin-top:90px;margin:40px 0}
+    h2{font-size:26px;margin:0 0 14px}
+
+    .grid{display:grid;gap:18px}
+    .grid.cards{grid-template-columns:repeat(3,1fr)}
+    .item{padding:18px;border-radius:18px;border:1px solid #24306a;background:linear-gradient(180deg,#131b3d,#0e1633)}
+    .item h3{margin:0 0 6px;font-size:18px}
+    .meta{color:#aab2d8;font-size:13px}
+    .list{display:grid;gap:12px}
+
+    .timeline{display:grid;gap:14px}
+    .tl{display:grid;gap:6px;padding:14px;border-radius:16px;border:1px dashed #2a3b8f}
+
+    .footer{margin:40px 0 10px;color:#97a3d6;font-size:13px;text-align:center}
+
+    @media (max-width:960px){
+      .hero{grid-template-columns:1fr}
+      .grid.cards{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><span class="dot"></span> 石奉艳｜个人主页</div>
+        <div class="nav-links">
+          <a href="#about">关于我</a>
+          <a href="#research">研究/项目</a>
+          <a href="#publications">论文/专利</a>
+          <a href="#resume">简历</a>
+          <a href="#contact">联系</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="card pad">
+        <h1>新能源材料 · 薄膜分离 · 半导体界面</h1>
+        <p class="subtitle">博士（Monash University），聚焦锂资源低温提取、功能膜分离与燃料电池膜；拥有跨学科项目管理与成果转化经验。</p>
+        <div class="pill">
+          <span>能源材料</span><span>膜分离</span><span>燃料电池</span><span>纳米工程</span><span>AI+数据分析</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#contact">联系与合作</a>
+          <a class="btn" href="#resume">下载简历</a>
+        </div>
+      </div>
+      <div class="avatar card"></div>
+    </div>
+
+    <section id="about">
+      <h2>关于我</h2>
+      <div class="item">
+        你好！我是石奉艳，当前在莫纳什大学进行博士研究。我的研究专注于以工程化思维解决能源领域的核心痛点：
+        例如将传统 1000℃ 的锂辉石焙烧环节降至 <b>90℃</b> 并实现 <b>95.9%</b> 提取效率；
+        开发 <b>Li/Mg 选择性 &gt; 550</b> 的耐强酸分离膜；设计 <b>1.1 W·cm⁻²</b> 的阴离子交换膜燃料电池堆。
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>研究 / 项目</h2>
+      <div class="grid cards">
+        <div class="item">
+          <h3>低温高效提锂工艺</h3>
+          <div class="meta">90℃ · 95.9%提取效率 · 产业化合作</div>
+          <p>基于机械活化与纳米工程，完成从痛点识别—方案—验证—产业对接的全流程。
+          </p>
+        </div>
+        <div class="item">
+          <h3>锂镁选择性分离膜</h3>
+          <div class="meta">Li/Mg &gt; 550 · 强酸稳定</div>
+          <p>面向盐湖与废电池浸出液的高选择性提锂，强调工程可扩展性与长期稳定性。</p>
+        </div>
+        <div class="item">
+          <h3>燃料电池 AEM</h3>
+          <div class="meta">IPN 结构 · 1.1 W·cm⁻²</div>
+          <p>通过互穿网络结构设计高效离子通道，同时保障高溶胀下的机械强度。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>论文 / 专利（精选）</h2>
+      <ul class="list">
+        <li><b>Small, 2025</b>：Au–CeO₂ 微马达协同抗菌（一作）</li>
+        <li><b>JECE, 2022</b>：ZIF-67/ZnO 光电催化灭菌（第一作者）</li>
+        <li><b>Applied Catalysis B, 2021</b>：ZIF-67/GO 光催-光热膜（共同作者）</li>
+        <li><b>专利</b>：低温提锂工艺、功能膜分离、光热复合材料等（5项）</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>简历与下载</h2>
+      <div class="timeline">
+        <div class="tl">
+          <b>博士</b> · Monash University · 化学工程（2023–2026 预计）
+          <div class="meta">研究方向：能源材料、分离膜、燃料电池；国际合作与项目管理经验</div>
+        </div>
+        <div class="tl">
+          <b>硕士</b> · 上海师范大学 · 物理化学（2019–2022）
+          <div class="meta">方向：光催化、纳米结构调控</div>
+        </div>
+        <div class="tl">
+          <a class="btn" href="#" onclick="alert('这里放你的简历下载链接，例如 GitHub Pages/网盘/Dropbox');return false;">下载 PDF 简历</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>联系</h2>
+      <div class="item">
+        <p>📧 邮箱：<a href="mailto:xfy5810@163.com">xfy5810@163.com</a>　📱 微信：xfy581027</p>
+        <p>也欢迎通过 LinkedIn / GitHub 与我联系（可在此处添加链接）。</p>
+      </div>
+    </section>
+
+    <p class="footer">© <span id="year"></span> 石奉艳 · 构建于纯 HTML/CSS/JS · 可一键部署到 GitHub Pages / Netlify</p>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
