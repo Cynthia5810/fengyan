@@ -1,0 +1,35 @@
+:root{
+  --bg:#0b1020; --card:#121933; --text:#e8ecff; --muted:#a9b3d6; --accent:#8aa3ff; --border:#24306a;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:linear-gradient(180deg,#0b1020,#0e1430);color:var(--text);font:15.5px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans',sans-serif}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{position:sticky;top:0;background:rgba(11,16,32,.7);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #1c2550;z-index:9}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:700}
+.links{display:flex;gap:16px;flex-wrap:wrap}
+.links a{padding:8px 10px;border-radius:10px}
+.links a:hover{background:#121a3a}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.hero .hero-art{height:240px;border-radius:20px;background:radial-gradient(120% 120% at 30% 20%,#2a3b8f,#121933 60%,#0a0f22);border:1px solid var(--border);box-shadow:var(--shadow)}
+.card{background:linear-gradient(180deg,#131b3d,#0e1633);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow);padding:20px}
+h1{font-size:38px;margin:0 0 10px}
+h2{font-size:24px;margin:20px 0 12px}
+.muted{color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.tags span{padding:6px 10px;border-radius:999px;background:#121a3a;border:1px solid #22307a;color:#c6cff9;font-size:13px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid #2a3b8f;background:#162050;color:#e8ecff;cursor:pointer}
+.btn.primary{background:linear-gradient(180deg,#6f86ff,#5970f6);border-color:#6f86ff;color:#0a0f22;font-weight:700}
+.cta{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+.section{scroll-margin-top:80px;margin:28px 0}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.list ul{margin:0;padding-left:18px}
+.inline-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.inline-form input{flex:1;min-width:220px;border-radius:10px;border:1px solid #2a3b8f;background:#0f1738;color:#e8ecff;padding:10px}
+.footer{text-align:center;color:#9aabd8;font-size:13px;padding:24px}
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+}

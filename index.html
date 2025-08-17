@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>石奉艳 · 个人网站</title>
+  <meta name="description" content="石奉艳 —— 新能源材料 / 膜分离 / 半导体界面 / 战略研究">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav container">
+    <div class="brand">石奉艳</div>
+    <div class="links">
+      <a href="#about">关于</a>
+      <a href="#projects">项目</a>
+      <a href="#pubs">论文与专利</a>
+      <a href="#contact">联系</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero card">
+    <div class="hero-text">
+      <h1>新能源材料 · 薄膜分离 · 半导体界面</h1>
+      <p class="muted">博士（Monash University）。聚焦锂资源低温提取、功能膜分离与燃料电池膜；具备跨学科项目管理与成果转化经验。</p>
+      <div class="tags">
+        <span>能源材料</span><span>膜分离</span><span>燃料电池</span><span>纳米工程</span><span>数据分析</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#contact">联系我</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">下载简历</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true"></div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>关于我</h2>
+    <div class="card">
+      <p>我以工程化思维解决能源领域痛点：将传统 <b>1000℃</b> 的锂辉石焙烧降至 <b>90℃</b> 并实现 <b>95.9%</b> 提取效率；开发 <b>Li/Mg &gt; 550</b> 的耐强酸分离膜；实现 <b>1.1 W·cm⁻²</b> 的阴离子交换膜燃料电池堆。</p>
+      <ul>
+        <li>博士（化学工程），专注：能源材料、分离膜、燃料电池</li>
+        <li>专利 5 项；SCI 论文 9 篇（第一作者 3 篇）</li>
+        <li>拥有国际合作、技术转化与跨部门协调经验</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>代表项目</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>低温高效提锂工艺</h3>
+        <p class="muted">90℃ · 95.9% 提取效率 · 产业化合作</p>
+        <p>基于机械活化与纳米工程，完成从痛点识别—方案—验证—产业对接的全流程。</p>
+      </article>
+      <article class="card">
+        <h3>锂镁选择性分离膜</h3>
+        <p class="muted">Li/Mg &gt; 550 · 强酸稳定</p>
+        <p>面向盐湖与废电池浸出液的高选择性提锂，强调工程可扩展性与长期稳定性。</p>
+      </article>
+      <article class="card">
+        <h3>燃料电池 AEM</h3>
+        <p class="muted">IPN 结构 · 1.1 W·cm⁻²</p>
+        <p>通过互穿网络结构设计高效离子通道，同时保障高溶胀下的机械强度。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="pubs" class="section">
+    <h2>论文与专利（精选）</h2>
+    <div class="card list">
+      <ul>
+        <li><b>Small, 2025</b>：Au–CeO₂ 微马达协同抗菌（第一作者）</li>
+        <li><b>JECE, 2022</b>：ZIF-67/ZnO 光电催化灭菌（第一作者）</li>
+        <li><b>Applied Catalysis B, 2021</b>：ZIF-67/GO 光催-光热膜（共同作者）</li>
+        <li><b>专利</b>：低温提锂工艺、功能膜分离、光热复合材料等（5 项）</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>联系我</h2>
+    <div class="card">
+      <p>📧 邮箱：<a href="mailto:xfy5810@163.com">xfy5810@163.com</a>　📱 微信：xfy581027</p>
+      <p>也欢迎通过 LinkedIn / GitHub 与我联系（在 <code>README.md</code> 中填写你的链接并更新本页）。</p>
+      <form class="inline-form" onsubmit="return false;">
+        <input type="text" placeholder="你的邮箱（示例）" aria-label="email">
+        <button class="btn">订阅更新（示例）</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> 石奉艳 · 构建于纯静态页面 · 可部署到 GitHub/Gitee/Netlify/Vercel
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
